@@ -222,6 +222,27 @@
   <script src="assets/dropdown/js/nav-dropdown.js"></script>
   <script src="assets/dropdown/js/navbar-dropdown.js"></script>
   <script src="assets/theme/js/script.js"></script>
+  <script src="./confetti.js"></script>
+    <script>
+      //   confetti.stop();
+
+      const startit = () => {
+        setTimeout(function () {
+          console.log("start");
+          confetti.start();
+        }, 1000);
+      };
+
+      const stopit = () => {
+        setTimeout(function () {
+          console.log("stop");
+          confetti.stop();
+        }, 6000);
+      };
+
+      startit();
+      stopit();
+    </script>
   
   
 <input name="cookieData" type="hidden" data-cookie-customDialogSelector='null' data-cookie-colorText='#424a4d' data-cookie-colorBg='rgba(234, 239, 241, 0.99)' data-cookie-textButton='Zgadzam się!' data-cookie-colorButton='' data-cookie-colorLink='#424a4d' data-cookie-underlineLink='true' data-cookie-text="Musisz zgodzić się na to że strona używa plików Cookies, zgadzasz się?">
